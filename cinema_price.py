@@ -7,9 +7,10 @@ def cinema_price():
     movie = input ('Which movie you want to see?')
     if not movie in ['Parasite', '1917', 'Sonic']:
       print ('This one is not on. Please choose between Parasite, 1917 and Sonic.')
+      continue
     else:
 
-      day = input('Dp you want to go today or tomorrow?')
+      day = input('Do you want to go today or tomorrow?')
       if day == 'today' and movie == 'Parasite':
         time = input('Choose time: 12, 16, 20. ')
         amount = int(input('How many tickets to do you want?'))
@@ -70,4 +71,5 @@ def cinema_price():
           print('The total cost is ', price2*amount)
         elif time == '18':
           print('The total cost is ', price3*amount) 
-    break;
+        
+      break
