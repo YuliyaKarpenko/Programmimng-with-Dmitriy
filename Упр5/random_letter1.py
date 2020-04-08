@@ -4,9 +4,9 @@ s = random.choice(listik)
 r = random.choice(s)
 for i in s:
     if i == r:
-        print ('?')
+        print ('?', end = '')
     else:
-        print(i)
+        print(i, end = '')
 g = input ('Guess the missing letter')
 if g == r:
     print ('Good job! The word was:',s)
