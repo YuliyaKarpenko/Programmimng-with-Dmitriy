@@ -1,0 +1,19 @@
+**Дано целое число. Определить сумму квадратов нечетных цифр в числе.**
+number = input('Give me a number')
+sumsqrt = 0
+for i in number:
+    if int(i)%2 != 0:
+        sumsqrt = sumsqrt + int(i)**2
+    else:
+        continue
+print(sumsqrt)
+
+
+number = input('Give me a number')
+n = list(number)
+print(sum([int(i)**2 for i in n if int(i)%2 != 0]))
+
+
+** С помощью метода join из списка lst получите строку '4568'**
+lst = [4, '5','6',8]
+''.join(map(lambda x:str(x),lst))
